@@ -1,0 +1,12 @@
+topic: ~animals()
+language: enu
+
+u:(animals)do you have a cat or a dog?
+   u1:(dog)Is it a big dog?
+     u2:(yes) make sure he has enough space to run
+     u2:(no) it must be so cute then
+   u1:(cat) is it lovely?
+     u2:(yes) do you live in delhi?
+        u3:(yes) does she hunt mouses?
+     u2:(no) get one of them they are cute though 
+   u1:(none) then what am i to you?

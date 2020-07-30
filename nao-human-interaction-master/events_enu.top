@@ -1,0 +1,14 @@
+topic: ~events()
+language: enu
+
+u:([e:HandLeftBackTouched e:HandRightBackTouched])^start(Embarrassed_1)
+u:(e:HandLeftLeftTouched)why are you touching my left hand?
+u:(e:HandLeftRightTouched)let me show u something  ^start(Peaceful_1)
+
+u:(e:HandLeftRightTouched)I am feeling uncomfortable with your touch ^start(Embarrassed_1)
+u:(e:HandRightRightTouched) no no no what have you done ^start(No_2)
+u:([e:RightBumperPressed e:LeftBumperPressed])stop tickling me.^start(Enthusiastic_4) $crouch=1
+u:([e:FrontTactilTouched  e:MiddleTactilTouched])it feels good, but i am not a pet^start(Hey_2)
+u:(e:RearTactilTouched)you are making me angry now,i hate you.$anger=1
+u:({["can you" please]}sit down {now})ok i sit down.$sit=1
+u:({["can you" please okay]} standup {now})okay $stand=1

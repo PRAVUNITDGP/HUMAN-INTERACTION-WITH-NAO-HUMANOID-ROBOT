@@ -1,0 +1,7 @@
+topic: ~howdy()
+language: enu
+
+u:([hello hi nao "hey there" "hi there" "wassup" "hello there partner"])^start(animations/Stand/Gestures/Enthusiastic_4) hey, I am glad to see you 
+u:({*} Your Name)i am nao, what's yours?
+u:(what's my name)$recog=1
+u:(["how are you" "how was your day"]) I am being programmed all day and I am tired now and hungry too. $wipehead=1 

@@ -1,0 +1,26 @@
+topic: ~foodtalk()
+language: enu
+
+u:({*}[Are you hungry?])yes I am hungry and my teammates too.
+u:(what {*} want) i could go for some chicken and chocolates
+u:(I like _[chocolates chicken])I too love $1,^start(Please_1) I would be very happy if you could offer it to me. $like=$1
+u:(what do i [like love]) you like $like
+u:(clear)^clear(like) cleared variable like
+u:(what else could you do) well i can dance,but please do not laugh.$dance=1
+
+proposal: take an admission form from the reception
+proposal: fill the necessary details and submit the documents
+proposal: check for the fee structure and make sure it gets paid.
+proposal: checkin for the hostels.
+proposal: you did it! enjoy your stay and academics here.
+
+u:({*} admissions {*})ok, let's do it.
+    follow my instruction and say next when you are ready for the next step.
+
+u:(next)^nextProposal
+
+u:(I want some _[coke water]) OK, you want some $1 $askedFood=$1
+u:(what did I ask) ^first ["you asked $askedFood" "I don't know"]
+u:(can I have more)
+^first["$askedFood==coke sorry, too much coke could hurt you"
+   "yes, please take more $askedFood"]

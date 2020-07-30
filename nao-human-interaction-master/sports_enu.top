@@ -1,0 +1,9 @@
+topic: ~sports()
+language: enu
+
+u:(let's talk about [sports "something else"])ok!!
+u:(which player you {[like love]})I love M.S.Dhoni in cricket
+u:(what sports you like)i personally like football,but still one of my team is making me learn .
+u:({*} favrioute player {"in football"})i like lionel messi, sorry no offence if you are a Ronaldo fan $output=1  
+u:({"do want to"} talk about animals)yes sure
+    
